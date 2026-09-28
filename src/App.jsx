@@ -324,7 +324,7 @@ function App() {
 
         <div className="footer-links">
           <a href="#home">Home</a>
-          <a href="#destinations">Destinations</a>
+          <Link to="/destinations">Destinations</Link>
           <a href="#packages">Packages</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
