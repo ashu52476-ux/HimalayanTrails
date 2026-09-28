@@ -827,7 +827,13 @@ footer p {
 
   .destination-cta {
     padding: 80px 7%;
-  }
+  }.destination-large-content a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #0b5d45;
+  font-weight: 700;
+  text-decoration: none;
+}
 }
 /* SHIMLA DESTINATION PAGE */
 
