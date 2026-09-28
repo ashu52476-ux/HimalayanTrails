@@ -1,0 +1,1258 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  color: #17231d;
+  background: #f7f5ef;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  height: 82px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f5ef;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo,
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  font-size: 30px;
+}
+
+.logo-name {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo-sub {
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #68766c;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  font-size: 14px;
+  color: #4c584f;
+}
+
+nav a:hover {
+  color: #17231d;
+}
+
+.nav-button,
+.primary-button {
+  background: #1d4937;
+  color: white;
+  padding: 14px 23px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 760px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+
+  background:
+    linear-gradient(90deg, rgba(12,28,21,.82), rgba(12,28,21,.25)),
+    url("https://images.unsplash.com/photo-1763229716896-74234165e7be?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 650px;
+  margin-left: 8%;
+}
+
+.eyebrow,
+.section-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.eyebrow {
+  color: #d8dfd7;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(55px, 7vw, 95px);
+  line-height: .98;
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  color: #d9e4d9;
+}
+
+.hero p {
+  max-width: 570px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e5ebe5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.secondary-button {
+  padding: 14px 23px;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 3px;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 8%;
+  right: 8%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,.35);
+  padding-top: 18px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.intro {
+  text-align: center;
+  padding: 120px 8%;
+}
+
+.section-label {
+  color: #6c786f;
+}
+
+.intro h2,
+.section-heading h2,
+.about h2,
+.contact h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.intro h2 span,
+.about h2 span {
+  color: #55725f;
+}
+
+.intro > p {
+  max-width: 680px;
+  margin: auto;
+  color: #657067;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 90px;
+  text-align: left;
+}
+
+.feature-number {
+  color: #809082;
+  font-size: 12px;
+}
+
+.features h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.features p {
+  color: #69736c;
+  line-height: 1.7;
+}
+
+.destinations,
+.packages {
+  padding: 100px 7%;
+}
+
+.destinations {
+  background: #e9ece5;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.section-heading > p {
+  max-width: 400px;
+  color: #69736c;
+  line-height: 1.7;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.destination-card {
+  min-height: 380px;
+  position: relative;
+  padding: 30px;
+  display: flex;
+  align-items: end;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.destination-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 25%, rgba(0,0,0,.75));
+}
+
+.destination-card > div {
+  position: relative;
+  z-index: 1;
+}
+
+.destination-card span {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.destination-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin: 10px 0 3px;
+}
+
+.destination-card p {
+  margin: 0;
+  opacity: .85;
+}
+
+.shimla {
+  background-image: url("https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=80");
+}
+
+.manali {
+  background-image: url("https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80");
+}
+
+.spiti {
+  background-image:
+    url("https://images.squarespace-cdn.com/content/v1/6298cb774cf3830bc9b342bf/1691921684439-E4Z41K3FJ9K5U54RZ3LR/mountain-landscape-spiti-valley-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.dharamshala {
+  background-image: url("https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80");
+}
+
+.dalhousie {
+  background-image: url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80");
+}
+
+.custom {
+  background-image:
+    url("https://www.lifeberrys.com/img/article/himachal1-1674043417-lb.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.package-card {
+  background: white;
+}
+
+.package-image {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+
+.package-shimla {
+  background-image: url("https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1000&q=80");
+}
+
+.package-spiti {
+  background-image: url("/spiti.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.package-temple {
+  background-image: url("https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=80");
+}
+
+.package-body {
+  padding: 30px;
+}
+
+.package-body > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #758177;
+}
+
+.package-body h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.package-body p {
+  color: #68736b;
+  line-height: 1.7;
+}
+
+.package-body a {
+  color: #1d4937;
+  font-weight: 700;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 650px;
+}
+
+.about-image {
+  background:
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85")
+    center/cover;
+}
+
+.about-content {
+  padding: 90px 10%;
+  background: #dce4dc;
+}
+
+.about-content p {
+  color: #5d6b61;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+.about-content .primary-button {
+  margin-top: 20px;
+}
+
+.contact {
+  padding: 130px 8%;
+  text-align: center;
+  background: #1d4937;
+  color: white;
+}
+
+.contact .section-label {
+  color: #b9cbbd;
+}
+
+.contact h2 {
+  font-size: clamp(50px, 7vw, 85px);
+}
+
+.contact p {
+  max-width: 600px;
+  margin: auto;
+  color: #d0dbd2;
+  line-height: 1.7;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.whatsapp,
+.email {
+  padding: 15px 28px;
+  border-radius: 3px;
+}
+
+.whatsapp {
+  background: white;
+  color: #1d4937;
+}
+
+.email {
+  border: 1px solid rgba(255,255,255,.5);
+}
+
+footer {
+  padding: 55px 7%;
+  background: #122c21;
+  color: #cdd8cf;
+}
+
+footer .logo-name {
+  color: white;
+}
+
+footer p {
+  color: #91a198;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  margin: 30px 0;
+  font-size: 14px;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255,255,255,.12);
+  padding-top: 25px;
+  color: #718078;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: none;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .hero-content {
+    width: auto;
+    margin: 0 7%;
+  }
+
+  .hero-bottom {
+    display: none;
+  }
+
+  .features,
+  .destination-grid,
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > p {
+    margin-top: 20px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    min-height: 450px;
+  }
+
+  .hero-buttons,
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .intro,
+  .destinations,
+  .packages {
+    padding: 80px 6%;
+  }
+}/* =========================================
+   DESTINATIONS PAGE
+   ========================================= */
+
+.destinations-page {
+  background: #f7f5ef;
+  color: #10231c;
+}
+
+/* DESTINATIONS HERO */
+
+.destinations-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(90deg, rgba(8, 25, 18, 0.78), rgba(8, 25, 18, 0.18)),
+    url("https://images.unsplash.com/photo-1763229716896-74234165e7be?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center;
+}
+
+.destinations-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 27, 19, 0.55),
+    rgba(7, 27, 19, 0.05)
+  );
+}
+
+.destinations-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 650px;
+  margin-left: 8%;
+  color: white;
+}
+
+.destinations-hero-content > span {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.destinations-hero-content h1 {
+  margin: 0 0 24px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(56px, 6vw, 88px);
+  line-height: 0.98;
+  font-weight: 500;
+}
+
+.destinations-hero-content p {
+  max-width: 600px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* DESTINATION LIST */
+
+.destinations-list {
+  padding: 110px 7%;
+}
+
+.destinations-list .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.destinations-list .section-heading h2 {
+  margin: 12px 0 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.destinations-list .section-heading p {
+  max-width: 350px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #65736c;
+}
+
+
+/* DESTINATION GRID */
+
+.destinations-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.destination-large-card {
+  background: #ffffff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-large-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(16, 35, 28, 0.12);
+}
+
+.destination-large-image {
+  position: relative;
+  height: 390px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.destination-large-card:hover .destination-large-image {
+  background-size: 108% auto;
+}
+
+.destination-large-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(5, 22, 15, 0.55),
+    transparent 55%
+  );
+}
+
+.destination-number {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  left: 26px;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.destination-large-content {
+  padding: 30px 32px 34px;
+}
+
+.destination-large-content > span {
+  display: block;
+  margin-bottom: 10px;
+  color: #64766d;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.destination-large-content h3 {
+  margin: 0 0 14px;
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: #10231c;
+}
+
+.destination-large-content p {
+  max-width: 580px;
+  margin: 0 0 24px;
+  color: #65736c;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.destination-large-content a {
+  color: #0f5a43;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.destination-large-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* BOTTOM CTA */
+
+.destination-cta {
+  padding: 110px 8%;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(rgba(7, 32, 23, 0.82), rgba(7, 32, 23, 0.82)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center;
+}
+
+.destination-cta > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.destination-cta h2 {
+  margin: 0 auto 18px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 500;
+}
+
+.destination-cta p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.destination-cta a {
+  display: inline-block;
+  padding: 15px 28px;
+  background: #ffffff;
+  color: #0f5a43;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.destination-cta a:hover {
+  transform: translateY(-2px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .destinations-hero {
+    min-height: 560px;
+  }
+
+  .destinations-hero-content {
+    width: auto;
+    margin: 0 7%;
+  }
+
+  .destinations-hero-content h1 {
+    font-size: 54px;
+  }
+
+  .destinations-hero-content p {
+    font-size: 16px;
+  }
+
+  .destinations-list {
+    padding: 75px 6%;
+  }
+
+  .destinations-list .section-heading {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .destinations-list .section-heading h2 {
+    font-size: 48px;
+    margin-bottom: 22px;
+  }
+
+  .destinations-page-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .destination-large-image {
+    height: 300px;
+  }
+
+  .destination-large-content {
+    padding: 25px;
+  }
+
+  .destination-large-content h3 {
+    font-size: 32px;
+  }
+
+  .destination-cta {
+    padding: 80px 7%;
+  }
+}
+/* SHIMLA DESTINATION PAGE */
+
+.shimla-page {
+  background: #f7f5ef;
+  color: #10231c;
+}
+
+.shimla-hero {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(5, 25, 18, 0.78), rgba(5, 25, 18, 0.12)),
+    url("https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=2000&q=85");
+  background-position: center;
+  background-size: cover;
+}
+.shimla-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.shimla-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.shimla-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.shimla-hero-content {
+  position: relative;
+  z-index: 2;
+  margin-left: 8%;
+  max-width: 680px;
+  color: white;
+}
+
+.shimla-hero-content > span {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.shimla-hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(65px, 7vw, 110px);
+  line-height: 1;
+  font-weight: 500;
+  margin: 24px 0;
+}
+
+.shimla-hero-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 550px;
+  color: #f1f1f1;
+}
+
+/* INTRO */
+
+.shimla-intro {
+  padding: 110px 8%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.shimla-intro h2,
+.shimla-experiences h2,
+.shimla-food h2,
+.shimla-info h2,
+.shimla-itinerary h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(40px, 4.5vw, 65px);
+  line-height: 1.15;
+  font-weight: 500;
+  margin: 20px 0 28px;
+}
+
+.shimla-intro p {
+  color: #65736c;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.shimla-facts {
+  background: white;
+  padding: 45px;
+}
+
+.shimla-facts > div {
+  padding: 22px 0;
+  border-bottom: 1px solid #e6e9e5;
+}
+
+.shimla-facts > div:last-child {
+  border-bottom: none;
+}
+
+.shimla-facts span,
+.info-card > span {
+  display: block;
+  color: #738077;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.shimla-facts strong {
+  font-size: 20px;
+}
+
+/* SIGHTSEEING */
+
+.shimla-sightseeing {
+  padding: 100px 8%;
+  background: #eaf0e9;
+}
+
+.shimla-sightseeing .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.shimla-sightseeing .section-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 500;
+  margin: 14px 0 0;
+}
+
+.shimla-sightseeing .section-heading p {
+  max-width: 360px;
+  color: #65736c;
+  line-height: 1.8;
+}
+
+.shimla-sightseeing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.shimla-place-card {
+  background: white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shimla-place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+.shimla-place-image {
+  position: relative;
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  filter: saturate(0.94) contrast(0.97);
+
+}
+
+.shimla-place-image span {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.shimla-place-content {
+  padding: 28px;
+}
+
+.shimla-place-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+
+.shimla-place-content p {
+  color: #65736c;
+  line-height: 1.75;
+  font-size: 14px;
+}
+
+/* EXPERIENCES */
+
+.shimla-experiences {
+  padding: 110px 8%;
+  background: #103e2e;
+  color: white;
+}
+
+.shimla-experience-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.experience-list {
+  margin-top: 45px;
+}
+
+.experience-list > div {
+  display: flex;
+  gap: 35px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-list strong {
+  color: #a9c9b2;
+  min-width: 45px;
+}
+
+.experience-list span {
+  font-size: 19px;
+}
+
+/* FOOD */
+
+.shimla-food {
+  padding: 110px 8%;
+}
+
+.food-intro {
+  max-width: 800px;
+  margin-bottom: 45px;
+}
+
+.food-intro p {
+  color: #65736c;
+  line-height: 1.8;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.food-card {
+  background: white;
+  padding: 35px;
+  border: 1px solid #e4e8e2;
+}
+
+.food-card span {
+  color: #668271;
+  font-size: 12px;
+}
+
+.food-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 22px 0 0;
+}
+
+/* TRAVEL INFORMATION */
+
+.shimla-info {
+  padding: 110px 8%;
+  background: #eaf0e9;
+}
+
+.shimla-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  padding: 38px;
+}
+
+.info-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin: 0 0 15px;
+  font-weight: 500;
+}
+
+.info-card p {
+  color: #65736c;
+  line-height: 1.8;
+}
+
+/* ITINERARY */
+
+.shimla-itinerary {
+  padding: 110px 8%;
+}
+
+.itinerary-days {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.itinerary-days > div {
+  background: white;
+  padding: 38px;
+  border-top: 4px solid #0f5a43;
+}
+
+.itinerary-days span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #0f5a43;
+}
+
+.itinerary-days h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+}
+
+.itinerary-days p {
+  color: #65736c;
+  line-height: 1.8;
+}
+
+/* FINAL CTA */
+
+.shimla-cta {
+  padding: 120px 8%;
+  background: #103e2e;
+  color: white;
+  text-align: center;
+}
+
+.shimla-cta > span {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.shimla-cta h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(45px, 5vw, 75px);
+  font-weight: 500;
+  margin: 25px 0;
+}
+
+.shimla-cta p {
+  max-width: 580px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+}
+
+.shimla-cta a {
+  display: inline-block;
+  background: white;
+  color: #103e2e;
+  padding: 17px 32px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .shimla-hero {
+    min-height: 550px;
+  }
+
+  .shimla-hero-content {
+    margin: 0 7%;
+  }
+
+  .shimla-hero-content h1 {
+    font-size: 58px;
+  }
+
+  .shimla-intro {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 75px 7%;
+  }
+
+  .shimla-sightseeing,
+  .shimla-experiences,
+  .shimla-food,
+  .shimla-info,
+  .shimla-itinerary,
+  .shimla-cta {
+    padding: 75px 7%;
+  }
+
+  .shimla-sightseeing .section-heading {
+    display: block;
+  }
+
+  .shimla-sightseeing-grid,
+  .food-grid,
+  .shimla-info-grid,
+  .itinerary-days {
+    grid-template-columns: 1fr;
+  }
+
+  .shimla-place-image {
+    height: 280px;
+  }
+}
+.navbar-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
