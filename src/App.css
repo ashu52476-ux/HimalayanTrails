@@ -86,11 +86,7 @@ nav a:hover {
   align-items: center;
   overflow: hidden;
   color: white;
-
-  background:
-    linear-gradient(90deg, rgba(12,28,21,.82), rgba(12,28,21,.25)),
-    url("https://images.unsplash.com/photo-1763229716896-74234165e7be?auto=format&fit=crop&w=2000&q=85")
-    center/cover;
+  background: #071510;
 }.hero-video {
   position: absolute;
   inset: 0;
@@ -483,8 +479,31 @@ footer p {
 }
 
 @media (max-width: 850px) {
-  nav {
+  .navbar {
+    height: auto;
+    min-height: 70px;
+    padding: 10px 5%;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .navbar nav {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 4px 0;
+    scrollbar-width: none;
+  }
+
+  .navbar nav::-webkit-scrollbar {
     display: none;
+  }
+
+  .navbar nav a {
+    font-size: 12px;
+    flex-shrink: 0;
   }
 
   .nav-button {
@@ -492,13 +511,24 @@ footer p {
   }
 
   .hero-content {
-    width: auto;
-    margin: 0 7%;
-  }
+  width: auto;
+  margin: 0 7%;
+}
 
-  .hero-bottom {
-    display: none;
-  }
+.hero h1 {
+  font-size: 48px;
+  line-height: 0.98;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-bottom {
+  display: none;
+}
 
   .features,
   .destination-grid,

@@ -1,4 +1,14 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 import Destinations from "./pages/Destinations";
 import Shimla from "./pages/Shimla";
 import "./App.css";
@@ -147,13 +157,13 @@ function App() {
 
         <div className="destination-grid">
 
-          <article className="destination-card shimla">
-            <div>
-              <span>01</span>
-              <h3>Shimla</h3>
-              <p>The Queen of Hills</p>
-            </div>
-          </article>
+          <Link to="/destinations/shimla" className="destination-card shimla">
+  <div>
+    <span>01</span>
+    <h3>Shimla</h3>
+    <p>The Queen of Hills</p>
+  </div>
+</Link>
 
           <article className="destination-card manali">
             <div>
@@ -342,6 +352,7 @@ function App() {
 function AppRouter() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/destinations" element={<Destinations />} />
