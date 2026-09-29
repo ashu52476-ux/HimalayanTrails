@@ -847,11 +847,7 @@ footer p {
   position: relative;
   display: flex;
   align-items: center;
-  background:
-    linear-gradient(90deg, rgba(5, 25, 18, 0.78), rgba(5, 25, 18, 0.12)),
-    url("https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=2000&q=85");
-  background-position: center;
-  background-size: cover;
+  background: #071510;
 }
 .shimla-hero-video {
   position: absolute;

@@ -43,7 +43,7 @@ function App() {
     muted
     loop
     playsInline
-    poster="https://images.unsplash.com/photo-1763229716896-74234165e7be?auto=format&fit=crop&w=2000&q=85"
+   
   >
     <source src="/videos/hero.mp4" type="video/mp4" />
   </video>
