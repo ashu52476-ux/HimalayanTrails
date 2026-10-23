@@ -21,7 +21,7 @@ function App() {
 <header className="navbar">
   <div className="logo">
   <img
-    src="/images/logo.png"
+    src="/himalayan-trails-logo.png.png"
     alt="Himalayan Trails Co."
     className="navbar-logo"
   />
