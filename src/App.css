@@ -809,7 +809,7 @@ footer p {
 @media (max-width: 768px) {
 
   .destinations-hero {
-    min-height: 560px;
+    min-height: auto;
   }
 
   .destinations-hero-content {
